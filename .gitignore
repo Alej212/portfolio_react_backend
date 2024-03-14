@@ -1,0 +1,18 @@
+# dependencias
+/node_modules
+
+# variables de entorno
+/.env
+
+# directorios de compilación
+/dist
+/build
+
+# caché
+/.cache
+
+# logs
+/logs
+
+# archivos del sistema
+.DS_Store
