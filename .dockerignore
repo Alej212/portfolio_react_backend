@@ -1,0 +1,21 @@
+# Registros
+logs
+*.log
+npm-debug.log*
+
+# Directorio de dependencias
+node_modules
+
+# Directorios de compilación
+dist
+
+# Archivos de entorno
+.env
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
