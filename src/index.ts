@@ -4,6 +4,7 @@ dotenv.config()
 import PostgresConnection from "./config/PostgresConnetion";
 import router from "./routes";
 import cors from 'cors'
+import path from 'path';
 
 const app = express()
 
@@ -13,6 +14,7 @@ app.use(cors({
     origin: 'http://localhost:5173'
 }))
 app.use(express.json())
+app.use('/media', express.static(path.join(__dirname, 'media')));
 app.use(router)
 
 app.get('/', (req, res) => {
