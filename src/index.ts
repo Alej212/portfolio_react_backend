@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 import PostgresConnection from "./config/PostgresConnetion";
 import router from "./routes";
+import cors from 'cors'
 
 const app = express()
 
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
 app.use(router)
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send('hello friend')
